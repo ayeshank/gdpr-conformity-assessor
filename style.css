@@ -1,0 +1,173 @@
+/* style.css */
+
+html,body {
+    background-color: #ffffff; /* Softer background color */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.header {
+    background: linear-gradient(to right, #2770bd, #1da08a);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head1
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px; /* Increased padding for better spacing */
+}
+
+.bucket-list {
+    flex: 1;
+    height: 100%;
+    padding: 10px;
+    margin-top: 16px;
+    background-color: #f5f5f5; /* Slightly lighter background */
+    border-radius: 5px;
+}
+
+#bucketList {
+    font-size: 14px; /* Larger font size for readability */
+    color: #888484; /* Darker text color */
+    text-align: center;
+}
+
+.bucketname {
+    font-size: 16px; /* Larger font size for bucket names */
+    font-weight: bold; /* Added bold font weight */
+}
+
+.bucket-details {
+    flex: 3;
+    padding: 0px 10px; /* Increased padding for better spacing */
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #1a9883;
+    transition: rgb(76, 81, 85) 0.2s;
+    text-decoration: none !important;
+}
+
+li:hover {
+    text-decoration: underline; /* Underline on hover for better feedback */
+}
+
+.check-button {
+    background: linear-gradient(to right, #2770bd, #1da08a);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px; /* Larger button with more padding */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.check-button:hover {
+    background: linear-gradient(to right, #2770bd, #1da08a);
+}
+
+.details-text {
+    justify-content: center !important; /* Center horizontally */
+    align-items: center !important; /* Center vertically */
+    height: 100%; /* Ensure the div takes up the full height of its container */
+    text-align: center; /* Center text horizontally within the div */
+    color: rgb(159, 155, 155);
+}
+
+.detail-header
+{
+    font-size: 14px;
+    background: linear-gradient(to right, #2770bd, #1da08a);
+    color: white;
+    text-align: left;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 3px 0px 3px 5px;
+    border-radius: 3px;
+
+}
+
+.rule-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer; /* Add cursor pointer for better UX */
+}
+
+.violation-text-container {
+    margin-left: 30px; /* Adjust the margin as needed */
+}
+
+.gdpr-rules-li {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    background-color: #f5f5f5;;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px; /* Larger font size */
+    font-weight: bold;
+}
+
+.gdpr-rules-ul-2 {
+    margin-top: 10px; /* More spacing between rule groups */
+}
+
+.gdpr-rules-li-2 {
+    background-color: #eeecec; /* Light gray background for violation items */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px; /* Larger font size for violations */
+    color: #f32b18; /* Red text color for violations */
+    display: flex;
+    align-items: center; /* Vertically center align */
+}
+
+li a {
+    text-decoration: none; /* Remove underline from anchor elements within list items */
+}
+
+.warning-icon
+{
+    width: 25px;
+    height: 25px;
+}
+
+.dropdown-icon
+{
+    width: 15px;
+    height: 15px;
+}
+
+.severity-chip{
+    color: white;
+    padding: 3px 5px 3px 5px;
+    border-radius: 10px;
+}

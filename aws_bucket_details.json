@@ -1,0 +1,244 @@
+[
+    {
+        "BucketName": "asset-config-storage",
+        "Owner": {
+            "DisplayName": "m.anwar.25353",
+            "ID": "8a95709eff98907e5c97c4c8b1ca62996415367c3ebf983941dcda1f785b8a9f"
+        },
+        "Grants": [
+            {
+                "Grantee": {
+                    "DisplayName": "m.anwar.25353",
+                    "ID": "8a95709eff98907e5c97c4c8b1ca62996415367c3ebf983941dcda1f785b8a9f",
+                    "Type": "CanonicalUser"
+                },
+                "Permission": "FULL_CONTROL"
+            }
+        ],
+        "Location": "us-west-2",
+        "Policy": null,
+        "Encryption": {
+            "Rules": [
+                {
+                    "ApplyServerSideEncryptionByDefault": {
+                        "SSEAlgorithm": "AES256"
+                    },
+                    "BucketKeyEnabled": false
+                }
+            ]
+        },
+        "PublicAccess": {
+            "BlockPublicAcls": false,
+            "IgnorePublicAcls": false,
+            "BlockPublicPolicy": false,
+            "RestrictPublicBuckets": false
+        },
+        "Logging": null,
+        "Versioning": null,
+        "VersioningMFA": null,
+        "Tagging": null,
+        "GeoRestriction": null,
+        "Lifecycle": null,
+        "TransferAcceleration": null,
+        "ObjectLockConfig": null
+    },
+    {
+        "BucketName": "csdgp-bucket",
+        "Owner": {
+            "DisplayName": "m.anwar.25353",
+            "ID": "8a95709eff98907e5c97c4c8b1ca62996415367c3ebf983941dcda1f785b8a9f"
+        },
+        "Grants": [
+            {
+                "Grantee": {
+                    "DisplayName": "m.anwar.25353",
+                    "ID": "8a95709eff98907e5c97c4c8b1ca62996415367c3ebf983941dcda1f785b8a9f",
+                    "Type": "CanonicalUser"
+                },
+                "Permission": "FULL_CONTROL"
+            },
+            {
+                "Grantee": {
+                    "Type": "Group",
+                    "URI": "http://acs.amazonaws.com/groups/global/AllUsers"
+                },
+                "Permission": "READ"
+            },
+            {
+                "Grantee": {
+                    "Type": "Group",
+                    "URI": "http://acs.amazonaws.com/groups/global/AllUsers"
+                },
+                "Permission": "READ_ACP"
+            }
+        ],
+        "Location": "us-west-2",
+        "Policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"PublicReadGetObject\",\"Effect\":\"Allow\",\"Principal\":\"*\",\"Action\":\"s3:GetObject\",\"Resource\":\"arn:aws:s3:::csdgp-bucket/*\"}]}",
+        "Encryption": {
+            "Rules": [
+                {
+                    "ApplyServerSideEncryptionByDefault": {
+                        "SSEAlgorithm": "AES256"
+                    },
+                    "BucketKeyEnabled": true
+                }
+            ]
+        },
+        "PublicAccess": {
+            "BlockPublicAcls": false,
+            "IgnorePublicAcls": false,
+            "BlockPublicPolicy": false,
+            "RestrictPublicBuckets": false
+        },
+        "Logging": null,
+        "Versioning": null,
+        "VersioningMFA": null,
+        "Tagging": null,
+        "GeoRestriction": true,
+        "Lifecycle": null,
+        "TransferAcceleration": null,
+        "ObjectLockConfig": null
+    },
+    {
+        "BucketName": "muaaz-test-bucket",
+        "Owner": {
+            "DisplayName": "m.anwar.25353",
+            "ID": "8a95709eff98907e5c97c4c8b1ca62996415367c3ebf983941dcda1f785b8a9f"
+        },
+        "Grants": [
+            {
+                "Grantee": {
+                    "DisplayName": "m.anwar.25353",
+                    "ID": "8a95709eff98907e5c97c4c8b1ca62996415367c3ebf983941dcda1f785b8a9f",
+                    "Type": "CanonicalUser"
+                },
+                "Permission": "FULL_CONTROL"
+            }
+        ],
+        "Location": "us-west-2",
+        "Policy": "{\"Version\":\"2012-10-17\",\"Id\":\"PutObjPolicy\",\"Statement\":[{\"Sid\":\"DenyObjectsThatAreNotSSEKMS\",\"Effect\":\"Deny\",\"Principal\":\"*\",\"Action\":\"s3:PutObject\",\"Resource\":\"arn:aws:s3:::muaaz-test-bucket/*\",\"Condition\":{\"Null\":{\"s3:x-amz-server-side-encryption-aws-kms-key-id\":\"true\"}}}]}",
+        "Encryption": {
+            "Rules": [
+                {
+                    "ApplyServerSideEncryptionByDefault": {
+                        "SSEAlgorithm": "AES256"
+                    },
+                    "BucketKeyEnabled": true
+                }
+            ]
+        },
+        "PublicAccess": {
+            "BlockPublicAcls": false,
+            "IgnorePublicAcls": false,
+            "BlockPublicPolicy": true,
+            "RestrictPublicBuckets": true
+        },
+        "Logging": null,
+        "Versioning": "Enabled",
+        "VersioningMFA": null,
+        "Tagging": [
+            {
+                "Key": "purpose ",
+                "Value": "tool-test"
+            }
+        ],
+        "GeoRestriction": false,
+        "Lifecycle": null,
+        "TransferAcceleration": null,
+        "ObjectLockConfig": null
+    },
+    {
+        "BucketName": "muaaz-test2",
+        "Owner": {
+            "DisplayName": "m.anwar.25353",
+            "ID": "8a95709eff98907e5c97c4c8b1ca62996415367c3ebf983941dcda1f785b8a9f"
+        },
+        "Grants": [
+            {
+                "Grantee": {
+                    "DisplayName": "m.anwar.25353",
+                    "ID": "8a95709eff98907e5c97c4c8b1ca62996415367c3ebf983941dcda1f785b8a9f",
+                    "Type": "CanonicalUser"
+                },
+                "Permission": "FULL_CONTROL"
+            }
+        ],
+        "Location": "us-west-2",
+        "Policy": null,
+        "Encryption": {
+            "Rules": [
+                {
+                    "ApplyServerSideEncryptionByDefault": {
+                        "SSEAlgorithm": "AES256"
+                    },
+                    "BucketKeyEnabled": true
+                }
+            ]
+        },
+        "PublicAccess": {
+            "BlockPublicAcls": true,
+            "IgnorePublicAcls": true,
+            "BlockPublicPolicy": true,
+            "RestrictPublicBuckets": true
+        },
+        "Logging": null,
+        "Versioning": null,
+        "VersioningMFA": null,
+        "Tagging": null,
+        "GeoRestriction": null,
+        "Lifecycle": null,
+        "TransferAcceleration": null,
+        "ObjectLockConfig": null
+    },
+    {
+        "BucketName": "mycomplaintbucket",
+        "Owner": {
+            "DisplayName": "m.anwar.25353",
+            "ID": "8a95709eff98907e5c97c4c8b1ca62996415367c3ebf983941dcda1f785b8a9f"
+        },
+        "Grants": [
+            {
+                "Grantee": {
+                    "DisplayName": "m.anwar.25353",
+                    "ID": "8a95709eff98907e5c97c4c8b1ca62996415367c3ebf983941dcda1f785b8a9f",
+                    "Type": "CanonicalUser"
+                },
+                "Permission": "FULL_CONTROL"
+            }
+        ],
+        "Location": "us-west-2",
+        "Policy": "{\"Version\":\"2012-10-17\",\"Id\":\"S3-Console-Auto-Gen-Policy-1698259977820\",\"Statement\":[{\"Sid\":\"S3PolicyStmt-DO-NOT-MODIFY-1698259977479\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"logging.s3.amazonaws.com\"},\"Action\":\"s3:PutObject\",\"Resource\":\"arn:aws:s3:::mycomplaintbucket/*\"}]}",
+        "Encryption": {
+            "Rules": [
+                {
+                    "ApplyServerSideEncryptionByDefault": {
+                        "SSEAlgorithm": "AES256"
+                    },
+                    "BucketKeyEnabled": true
+                }
+            ]
+        },
+        "PublicAccess": {
+            "BlockPublicAcls": true,
+            "IgnorePublicAcls": true,
+            "BlockPublicPolicy": true,
+            "RestrictPublicBuckets": true
+        },
+        "Logging": {
+            "TargetBucket": "mycomplaintbucket",
+            "TargetPrefix": ""
+        },
+        "Versioning": "Enabled",
+        "VersioningMFA": "Disabled",
+        "Tagging": [
+            {
+                "Key": "purpose",
+                "Value": "complaint"
+            }
+        ],
+        "GeoRestriction": false,
+        "Lifecycle": null,
+        "TransferAcceleration": "Enabled",
+        "ObjectLockConfig": "Enabled"
+    }
+]

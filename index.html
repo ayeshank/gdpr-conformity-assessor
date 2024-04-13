@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GDPR Rule Violation Checker In Multi Cloud</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="head1">
+        <img src="./cloud.png" style="width: 70px;height: 70px;padding-left: 1rem;"/>
+        <h3>Multi Cloud GDPR Conformity Assessor</h3>
+        </div>
+        <img src="./user.png" style="width: 35px;height: 35px;padding-right: 1rem;"/>
+    </div>
+    <div id="mycontainer" class="container">
+        <div style="height: 100%;">
+            <div class="bucket-list">
+                <p class="bucketname">My Buckets</p>
+                <ul id="bucketList">
+                    <img src="./loadStorage.png" style="width: 25px;height: 25px;padding-left: 1rem;"/>
+                    <br>
+                    No buckets found                    
+                </ul>
+            </div>
+            <button onclick="checkGDPRViolations()" class="check-button">Start Syncing With Multi Cloud 
+            <img src="./sync.png" style="width: 25px;height: 25px;padding-left: 1rem;"/>
+            </button>
+        </div>
+        <div class="bucket-details" id="result">
+            <div id="details" class="details-text">
+                Select a bucket to view its GDPR violations.
+            </div>
+            <div class="gdpr-rules">
+                <ul id="gdprRulesList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="gdpr_rules_violation_checker.js"></script>
+</body>
+</html>
